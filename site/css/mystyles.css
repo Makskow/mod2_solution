@@ -1,0 +1,79 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-size: 1.75em;
+}
+
+.container {
+	width: 100%;
+	text-align: center;
+}
+
+.row {
+	position: relative;
+	display: inline-block;
+	margin: 10px;
+	background-color: #a9a9a9;
+	border: 1px solid #000;
+}
+
+.title {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100px;
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.row1 .title {
+	background-color: #ff9696;
+}
+
+.row2 .title {
+	background-color: #b22222;
+	color: white;
+}
+
+.row3 .title {
+	background-color: #ebda8b;
+}
+
+.row > p {
+	margin: 40px 10px 10px 10px;
+	text-align: left;
+}
+
+.title p {
+	margin: 5px auto;
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+/* MEDIUM DEVICES */
+@media (min-width: 992px) {
+	.row1, .row2, .row3 {
+		width: 30%;
+	}
+}
+
+/* SMALL DEVICES */
+@media (min-width: 768px) and (max-width: 991px) {
+	.row1, .row2 {
+		width: 41%;
+	}
+
+	.row3 {
+		width: 85%;
+	}
+}
+
+/* XS DEVICES */
+@media (max-width: 767px) {
+	.row1, .row2, .row3 {
+		width: 80%;
+	}
+}
